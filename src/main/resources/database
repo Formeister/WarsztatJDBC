@@ -1,0 +1,11 @@
+INSERT INTO "Action"
+( "ACTION_ID", "NAME", "DESC", "PRICE" )
+VALUES ( 1, 'Naprawa', 'Naprawa samochodu', 200);
+
+INSERT INTO "Customer"
+( "CUSTOMER_ID", "NAME", "PESEL", "ADDRESS" )
+VALUES ( 1, 'Jan', 92051054312, 'Gdańsk, ul. Taneczna 22');
+
+INSERT INTO "Order"
+( "ORDER_ID", "CUSTOMER_ID", "ACTION_ID", "ORDER_DATE", "DETAILS" )
+VALUES (1, 1, 1, 2016-06-21, 'Zamówienie nr 1');
