@@ -11,7 +11,6 @@ public class Customer {
 		super();
 	}
 	
-
 	public Customer(int customer_id, String name, long pesel, String address) {
 		super();
 		this.customer_id = customer_id;

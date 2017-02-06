@@ -80,7 +80,7 @@ public class ActionService {
 				preparedStatement.setString(2, action.getDesc());
 				preparedStatement.setDouble(3, action.getPrice());
 				preparedStatement.setInt(4, action.getAction_id());
-				preparedStatement.executeUpdate();
+				UpA = preparedStatement.executeUpdate();
 
 			} catch (SQLException e) {
 				e.printStackTrace();

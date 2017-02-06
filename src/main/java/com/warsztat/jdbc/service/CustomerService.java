@@ -80,7 +80,7 @@ public class CustomerService {
 				preparedStatement.setLong(2, customer.getPesel());
 				preparedStatement.setString(3, customer.getAddress());
 				preparedStatement.setInt(4, customer.getCustomer_id());
-				preparedStatement.executeUpdate();
+				UpC = preparedStatement.executeUpdate();
 
 			} catch (SQLException e) {
 				e.printStackTrace();
@@ -129,6 +129,13 @@ public class CustomerService {
 			e.printStackTrace();
 		}
 		return customers;
+	}
+	
+	public int countCustomer() {
+		int count=0;
+		List<Customer> customers = getCustomer();
+		count = customers.size();
+		return count;
 	}
 
 }

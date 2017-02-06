@@ -87,7 +87,7 @@ public class OrderService {
 				preparedStatement.setDate(3, order.getOrder_date());
 				preparedStatement.setString(4, order.getDetails());
 				preparedStatement.setInt(5, order.getOrder_id());
-				preparedStatement.executeUpdate();
+				UpO = preparedStatement.executeUpdate();
 
 			} catch (SQLException e) {
 				e.printStackTrace();
